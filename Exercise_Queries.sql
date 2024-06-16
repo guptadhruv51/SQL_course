@@ -13,3 +13,5 @@ Select * from customers where lower(first_name) regexp 'elka|ambur';
 select * from customers where lower(last_name) regexp 'ey$|on$';
 select * from customers where lower(last_name) regexp '^my|se';
 select * from customers where lower(last_name) regexp 'b[ru]';
+select order_id, product_id, quantity,unit_price from order_items where order_id=2 order by quantity*unit_price Desc;
+Select * from customers order by points desc limit 3;
